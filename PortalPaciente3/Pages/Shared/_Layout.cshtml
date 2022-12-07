@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Patient Portal</title>
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="~/css/estilos.css" />
+    <link type="text/css" rel="stylesheet" href="~/css/main-portal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <asp:PlaceHolder runat="server">
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <img class="encabezado" src="~/images/header-sinmenu.png">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1002" role="button" data-toggle="dropdown" aria-expanded="false">
+                                La <br>Institución
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1018" title="El Hospital">El Hospital</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1019" title="Talento Humano">Talento Humano</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=10571" title="Entes de control que vigilan a la entidad y mecanismos de supervisión">Entes de control que vigilan a la entidad y mecanismos de supervisión</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=86993" title="Servicios">Servicios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=71596" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Transparencia <br>Institucional
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=71949" title="1. Información de la Entidad">1. Información de la Entidad</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=72293" title="2. Normatividad">2. Normatividad</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=74486" title="3. Contratación">3. Contratación</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=73203" title="4. Planeación, Presupuesto e Informes">4. Planeación, Presupuesto e Informes</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=83959" title="5. Trámites y Servicios">5. Trámites y Servicios</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=84192" title="6. Participa">6. Participa</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=83960" title="7. Datos abiertos">7. Datos abiertos</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=71627" title="8. Información específica para Grupos de Interés">8. Información específica para Grupos de Interés</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=84122" title="9. Obligación de reporte de información">9. Obligación de reporte de información</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1004" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Atención y Servicios a la <br>Ciudadanía
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="http://104.208.216.173/PayLink/" title="Trámites y servicios">Trámites y servicios</a>
+                                <a class="dropdown-item" href="http://104.208.216.173/PatientPortal/" title="Portal del paciente">Portal del paciente</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=86665" title="Canales de atención y pida una cita">Canales de atención y pida una cita</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=68043" title="PQRSDF">PQRSDF</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=10071" title="Preguntas y Respuestas Frecuentes">Preguntas y Respuestas Frecuentes</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=70797" title="Carta de Trato Digno al Ciudadano">Carta de Trato Digno al Ciudadano</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=16383" title="Glosario">Glosario</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=306" title="Citas Médicas">Citas Médicas</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1107" title="Caracterización de Usuarios">Caracterización de Usuarios</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=57943" title="Chat">Chat</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=126" title="Portal de Niños">Portal de Niños</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1190" title="Notificaciones, publicaciones, comunicaciones e informes">Notificaciones, publicaciones, comunicaciones e informes</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=70062" title="Rendición de Cuentas ">Rendición de Cuentas </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=70469" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Participa
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=70374" title="Participa">Participa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1005" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Educación
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=10235" title="Escuela Auxiliares de Enfermería">Escuela Auxiliares de Enfermería</a>
+                                <a class="dropdown-item" href="/Cursos/Cursos" title="Cursos y capacitaciones">Cursos y capacitaciones</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1178" title="Investigación Científica">Investigación Científica</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1010" title="Formación y Docencia">Formación y Docencia</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1006" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Normatividad
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1179" title="Leyes">Leyes</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1128" title="Decretos">Decretos</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1109" title="Circulares">Circulares</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1220" title="Resoluciones">Resoluciones</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1132" title="Directivas">Directivas</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1244" title="Documentos adicionales">Documentos adicionales</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1188" title="Normograma">Normograma</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=17930" title="Decisiones judiciales que declaren la nulidad de apartes del decreto único">Decisiones judiciales que declaren la nulidad de apartes del decreto único</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=17938" title="Acuerdos">Acuerdos</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=10544" title="Normas que regulan la Entidad">Normas que regulan la Entidad</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=87068" title="Acciones constitucionales">Acciones constitucionales</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1008" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Prensa
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=70769" title="Notas destacadas">Notas destacadas</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1009" title="Noticias">Noticias</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=1026" title="Multimedia">Multimedia</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=125" title="Nuestros Portales">Nuestros Portales</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=129" title="Calendario de eventos Hospital Militar Central">Calendario de eventos Hospital Militar Central</a>
+                                <a class="dropdown-item" href="https://www.hospitalmilitar.gov.co/index.php?idcategoria=86891" title="Boletines de memoria ">Boletines de memoria </a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="w-100">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <img class="pie" src="~/images/v5_33.png">
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

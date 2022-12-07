@@ -1,0 +1,64 @@
+﻿@page "{handler?}"
+@model PortalPaciente3.Pages.Disponibilidad.IndexModel
+@{
+    
+}
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@functions {
+    public string GetAntiXsrfRequestToken()
+    {
+        return Xsrf.GetAndStoreTokens(Model.HttpContext).RequestToken;
+    }
+}
+<script type="module" src="~/js/consultarDisponibilidad.js" asp-append-version="true"></script>
+
+ <div class="container-titulo_principal container-titulo-paciente">
+        <div class="container">
+            <img src="~/images/ico-portalpaciente.png" class="ico-portalpaciente">
+            <h1 class="titulo_principal">
+                Citas Médicas
+            </h1>
+        </div>
+    </div>
+   <hr class="header-separador">
+<div class="container-paciente mt-5 container">
+    <div class="container-login">
+        <div class="row">
+            <form>
+                <input type="hidden" id="__RequestVerificationToken" value="@GetAntiXsrfRequestToken()" />
+                <div class="row">
+                    <div class="container-form col-sm-3 mb-4">
+                        <label class="form-label">Fecha inicial:</label>
+                    <input class="input-form" id="fechainicial" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                </div>
+            </div>
+                <div class="row">
+                <div class="container-form col-sm-3 mb-4">
+                        <label class="form-label">Especialidad:</label>
+                    <select class="input-form" id="especialidad">
+                        @foreach (var item in Model.ListEspecialidades)
+                        {
+                            <option value="@item.oid">@item.geeDescri</option>
+                        }
+                    </select>
+                </div>
+            </div>
+                <div class="row">
+                <div class="container-form col-sm-3 mb-4">
+                        <label class="form-label">Profecional:</label>
+                    <select class="input-form" id="profecional"></select>
+                </div>
+            </div>
+                
+                <div class="row">
+                <div class="container-form col-sm-3 mb-3 btn-login">
+                        <a class="btn w-100" id="consultar">Consultar<a />
+                   </div>
+            </div>
+            </form>
+            <div id="disponibilidad"></div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<main>
+    <div class="container-titulo_principal container-titulo-paciente">
+        <div class="container">
+            <img src="~/images/ico-portalpaciente.png" class="ico-portalpaciente">
+            <h1 class="titulo_principal">
+                Portal del Paciente
+            </h1>
+        </div>
+    </div>
+    <hr class="header-separador">
+    <div class="container-paciente mt-5 container">
+        <p class="parrafo-login">Esta sección le permite al usuario o usuario-editor cambiar sus datos personales y password inscritos en la base de datos del Portal. Ingrese al vínculo mostrado en la parte inferior Información del Contacto; si usted ya habilito su usuario y password el sistema le permite ingresar al formulario personal de datos; de lo contrario el sistema le solicita la información para ingresar al formulario.</p>
+        <div class="container-login">
+            <div class="row">
+                <div class="container-form col-sm-3 mb-4">
+                    <label class="form-label">Usuario:</label>
+                    <input type="text" class="input-form">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-form col-sm-3 mb-4">
+                    <label class="form-label">Contraseña:</label>
+                    <input type="text" class=" input-form">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-form col-sm-3 mb-3 btn-login">
+                    <a class="btn w-100" href="/Home/PatientPortal">Ingresar</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-form col-3 mb-2">
+                    <a class="recuperar" href="#">Recuperar Contraseña</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

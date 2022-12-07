@@ -1,0 +1,77 @@
+﻿@page
+<main>
+
+    <div class="container-titulo_principal container-titulo-paciente">
+        <div class="container">
+            <img src="~/images/ico-portalpaciente.png" class="ico-portalpaciente">
+            <h1 class="titulo_principal">
+                Portal del Paciente
+            </h1>
+        </div>
+    </div>
+    <hr class="header-separador">
+
+    <div class="container-paciente mt-5 container">
+        <div class="row">
+            <div class="col"><p>Seleccione a continuación el servicio de su interés:</p></div>
+        </div>
+
+        <div class="paciente-servicios row g-4 px-0">
+            <div class="paciente-servicios-item col-md-6 d-sm-flex">
+                <div class="paciente-servicios-item-icono"><img class="icon_categoria" src="~/images/ico-citasLi.svg"></div>
+                <div class="paciente-servicios-item-boton">
+                    <a href="/Disponibilidad/Index" class="align-middle">Citas Médicas</a>
+                </div>
+                <div class="paciente-servicios-item-datos">
+                    <div class="servicios-icono servicios-icono-online">Trámite en línea</div>
+                    <div class="servicios-icono servicios-icono-costo">Trámite sin costo</div>
+                    <div class="servicios-icono servicios-icono-duracion">Duración: <span class="servicio-tiempo">15 minutos</span></div>
+                </div>
+            </div>
+            <div class="paciente-servicios-item col-md-6 d-sm-flex">
+                <div class="paciente-servicios-item-icono"><img class="icon_categoria" src="~/images/ico-actualizarLi.svg"></div>
+                <div class="paciente-servicios-item-boton">
+                    <a href="index.php?idcategoria=67656" class="align-middle">Actualizar Datos</a>
+                </div>
+                <div class="paciente-servicios-item-datos">
+                    <div class="servicios-icono servicios-icono-online">Trámite en línea</div>
+                    <div class="servicios-icono servicios-icono-costo">Trámite sin costo</div>
+                    <div class="servicios-icono servicios-icono-duracion">Duración: <span class="servicio-tiempo">15 minutos</span></div>
+                </div>
+            </div>
+            <div class="paciente-servicios-item col-md-6 d-sm-flex">
+                <div class="paciente-servicios-item-icono"><img class="icon_categoria" src="~/images/ico-documentosLi.svg"></div>
+                <div class="paciente-servicios-item-boton">
+                    <a href="index.php?idcategoria=67656" class="align-middle">Consultar Documentos</a>
+                </div>
+                <div class="paciente-servicios-item-datos">
+                    <div class="servicios-icono servicios-icono-online">Trámite en línea</div>
+                    <div class="servicios-icono servicios-icono-costo">Trámite sin costo</div>
+                    <div class="servicios-icono servicios-icono-duracion">Duración: <span class="servicio-tiempo">15 minutos</span></div>
+                </div>
+            </div>
+            <div class="paciente-servicios-item col-md-6 d-sm-flex">
+                <div class="paciente-servicios-item-icono"><img class="icon_categoria" src="~/images/ico-autorizacionLi.svg"></div>
+                <div class="paciente-servicios-item-boton">
+                    <a href="#" class="align-middle">Consultar Autorizaciones</a>
+                </div>
+                <div class="paciente-servicios-item-datos">
+                    <div class="servicios-icono servicios-icono-online">Trámite en línea</div>
+                    <div class="servicios-icono servicios-icono-costo">Trámite sin costo</div>
+                    <div class="servicios-icono servicios-icono-duracion">Duración: <span class="servicio-tiempo">15 minutos</span></div>
+                </div>
+            </div>
+            @*<div class="paciente-servicios-item col-md-6 d-sm-flex">
+                <div class="paciente-servicios-item-icono"><img class="icon_categoria" src="images/ico-turnoLi.svg"></div>
+                <div class="paciente-servicios-item-boton">
+                    <a href="index.php?idcategoria=67656" class="align-middle">Asignar Turnos</a>
+                </div>
+                <div class="paciente-servicios-item-datos">
+                    <div class="servicios-icono servicios-icono-online">Trámite en línea</div>
+                    <div class="servicios-icono servicios-icono-costo">Trámite sin costo</div>
+                    <div class="servicios-icono servicios-icono-duracion">Duración: <span class="servicio-tiempo">15 minutos</span></div>
+                </div>
+            </div>*@
+        </div>
+    </div>
+</main>
